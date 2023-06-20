@@ -8,8 +8,8 @@
 
 int main(void)
 {
-	int i = 0;
-	int j = 1;
+	long i = 0;
+	long j = 1;
 	int n = 0;
 	int fib;
 
@@ -17,9 +17,9 @@ int main(void)
 	{
 		fib = j + i;
 		if (n != 49)
-			printf("%d, ", fib);
+			printf("%ld, ", fib);
 		else
-			printf("%d\n", fib);
+			printf("%ld\n", fib);
 		i = j;
 		j = fib;
 		n += 1;
