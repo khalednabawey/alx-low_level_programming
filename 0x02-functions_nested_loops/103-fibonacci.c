@@ -9,14 +9,14 @@ int main(void)
 {
 	int i = 0;
 	int j = 1;
-	int s = 0,
+	int s = 0;
 	int x = 0;
 
 	while (1)
 	{
 		x = i + j;
 		if (x % 2 == 0)
-			sum += x;
+			s += x;
 		i = j;
 		j = x;
 		if (x > 4000000)
