@@ -11,7 +11,7 @@ int main(void)
 	long i = 0;
 	long j = 1;
 	int n = 0;
-	int fib;
+	long fib;
 
 	while (n < 50)
 	{
