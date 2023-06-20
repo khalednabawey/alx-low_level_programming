@@ -10,7 +10,7 @@ int main(void)
 	int i = 0;
 	int j = 1;
 	int s = 0,
-	int x;
+	int x = 0;
 
 	while (1)
 	{
