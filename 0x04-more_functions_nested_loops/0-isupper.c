@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * _islower ->
- * is a function to check whether the character is upper
+ * _isupper ->
+ * is a function to check whether the character is upper or not.
  *
  * @c: c is an integer parameter
  * Return: int
