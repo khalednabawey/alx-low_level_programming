@@ -10,25 +10,27 @@
 
 void print_triangle(int size)
 {
-	int i, j;
+	int row, hashes, spaces;
 
-	if (n > 0)
+	if (size <= 0)
 	{
-		for (i = 1; i <= n; i++)
+		_putchar('\n');
+	}
+	else
+	{
+		for (row = 1; row <= size; row++)
 		{
-			for (j = n - i; j >= 1; j--)
+			for (spaces = size - row; spaces >= 1; spaces--)
 			{
 				_putchar(' ');
 			}
-			for (j = 1; j <= i; j++)
+			for (hashes = 1; hashes <= row; hashes++)
 			{
 				_putchar('#');
 			}
 			_putchar('\n');
 		}
 	}
-	else
-		putchar('\n');
 }
 
 
