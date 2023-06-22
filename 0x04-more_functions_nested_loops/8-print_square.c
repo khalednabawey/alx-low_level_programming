@@ -1,15 +1,14 @@
 #include "main.h"
 
 /**
- * print_diagonal ->
+ * print_square ->
  * is a function that prints a square, followed by a new line.
  *
  * @size: size and integer parameter.
- *
  * Return: void(no return).
  */
 
-void print_square(int size);
+void print_square(int size)
 {
 	if (n > 0)
 	{
