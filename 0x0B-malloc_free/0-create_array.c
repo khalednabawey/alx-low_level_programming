@@ -15,7 +15,10 @@ char *create_array(unsigned int size, char c)
 
 	if (ptr == NULL)
 	{
-		fprintf(stderr, "Memory allocation failed\n");
+		return (ptr);
+	}
+	else if (size == 0)
+	{
 		return (NULL);
 	}
 	int i;
