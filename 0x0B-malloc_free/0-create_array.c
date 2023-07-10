@@ -21,9 +21,8 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-	unsigned int i;
 
-	for (i = 0; i < size; i++)
+	for (unsigned int i = 0; i < size; i++)
 	{
 		*(ptr + i) = c;
 	}
