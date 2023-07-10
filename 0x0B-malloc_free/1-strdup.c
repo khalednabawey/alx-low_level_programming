@@ -11,11 +11,9 @@
  */
 char *_strdup(char *str)
 {
+	int i = 0, size = 0;
+
 	char *arr = malloc(size);
-
-	int i, size;
-
-	size = i = 0;
 
 	if (str == NULL)
 		return (NULL);
