@@ -11,18 +11,27 @@
  */
 char *_strdup(char *str)
 {
-	int i = 0, size = 0;
+    int i, size = 0;
 
-	char *arr = malloc(size);
+    if (str == NULL)
+        return (NULL);
 
-	if (str == NULL)
-		return (NULL);
-	while (*(str + i))
-		size += 1;
+    while (str[size] != '\0')
+        size++;
 
-	for (i = 0; i < size; i++)
-	{
-		*(arr + i) = *(str + i);
-	}
-	return (arr);
+    char *arr = malloc((size + 1) * sizeof(char));
+
+    if (arr == NULL)
+    {
+        fprintf(stderr, "Memory allocation failed\n");
+        return (NULL);
+    }
+
+    for (i = 0; i < size; i++)
+    {
+        *(arr + i) = *(str + i);
+    }
+    arr[size] = '\0'; // Add the null terminator at the end
+
+    return (arr);
 }
