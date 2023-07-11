@@ -29,6 +29,8 @@ char *str_concat(char *s1, char *s2)
 		ss2++;
 
 	str = malloc((ss1 + ss2 + 1) * sizeof(char));
+	if (str == NULL)
+		return (NULL);
 
 	for (j = 0; j < ss1; j++)
 	{
