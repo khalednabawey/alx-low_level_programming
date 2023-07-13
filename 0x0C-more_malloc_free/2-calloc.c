@@ -10,16 +10,17 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *r;
+	int i;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	r = malloc(nmemb * size);
+	void *ptr = malloc(nmemb * size);
 
-	if (r == NULL)
+	if (ptr != NULL)
+		memset(ptr, 0, nmemb * size);
+	else
 		return (NULL);
 
-	return (r);
+	return (ptr);
 }
-
