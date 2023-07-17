@@ -4,7 +4,7 @@
  *
  * Return: int.
  */
-#define PRINT_FILE() printf("%s", __FILE__)
+#define PRINT_FILE() printf("%s\n", __FILE__)
 
 int main(void)
 {
