@@ -1,8 +1,7 @@
-#include "lists.h"
-#include <stdio.h>
-#include<stddef.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdio.h>
+#include "lists.h"
 
 /**
  * print_list -> function that prints all the elements of a list_t list.
@@ -11,12 +10,11 @@
  *
  * Return: size_t of the list.
  */
-
 size_t print_list(const list_t *h)
 {
-	size_t size = 0;
+	int size = 0;
 
-	while (h != NULL)
+	while (h)
 	{
 		if (h->str == NULL)
 			printf("[0] (nil)\n");
